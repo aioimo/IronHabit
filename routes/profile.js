@@ -4,14 +4,8 @@ const Goal        = require("../models/Goal");
 const User        = require("../models/User");
 const uploadCloud = require('../config/cloudinary.js');
 const stats       = require('../utils/stats-functions')
+const isLoggedIn= require('../middleware/login')
 
-//Middleware for checking if user is logged in
-function isLoggedIn(req,res,next) {
-  if (req.user) return next();
-  else {
-    res.render('signedOut');
-  }
-}
 
 
 router.get('/profile', isLoggedIn, (req, res, next) => {

@@ -6,15 +6,17 @@ const tools     = require('../utils/time-functions')
 const display   = require('../utils/display-functions')
 const stats     = require('../utils/stats-functions')
 const helper    = require('../utils/helper-functions')
+const isLoggedIn= require('../middleware/login')
+
 
 
 //Middleware for checking if user is logged in
-function isLoggedIn(req,res,next) {
-  if (req.user) return next();
-  else {
-    res.render('signedOut');
-  }
-}
+// function isLoggedIn(req,res,next) {
+//   if (req.user) return next();
+//   else {
+//     res.render('signedOut');
+//   }
+// }
 
 
 /* GET home page */
