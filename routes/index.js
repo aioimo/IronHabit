@@ -2,10 +2,10 @@ const express   = require('express');
 const router    = express.Router();
 const Goal      = require("../models/Goal");
 const User      = require("../models/User");
-const tools     = require('../time-functions')
-const display   = require('../display-functions')
-const stats     = require('../stats-functions')
-const helper    = require('../helper-functions')
+const tools     = require('../utils/time-functions')
+const display   = require('../utils/display-functions')
+const stats     = require('../utils/stats-functions')
+const helper    = require('../utils/helper-functions')
 
 
 //Middleware for checking if user is logged in

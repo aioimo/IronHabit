@@ -1,7 +1,7 @@
 const express      = require('express');
 const router       = express.Router();
 const Goal         = require("../models/Goal");
-const stats        = require('../stats-functions')
+const stats        = require('../utils/stats-functions')
 
 
 

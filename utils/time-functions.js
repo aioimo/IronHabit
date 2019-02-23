@@ -18,8 +18,6 @@ const currentDateAsDate = function() {
   return today
 }
 
-
-
 //returns day of week 0-6
 const currentDay = function() {
   let today = new Date()
@@ -35,16 +33,6 @@ const startDayOfFollowingWeek = function() {
   result.setDate(date-day+7)
   return result
 }
-
-
-
-const userId = "5beb1bead6f52a2c5105072c";
-
-function getPastHabits(wasSuccess, userId) {
-
-
-}
-
 
 exports.twoDigits = twoDigits
 exports.currentDate = currentDate

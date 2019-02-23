@@ -3,7 +3,7 @@ const router      = express.Router();
 const Goal        = require("../models/Goal");
 const User        = require("../models/User");
 const uploadCloud = require('../config/cloudinary.js');
-const stats       = require('../stats-functions')
+const stats       = require('../utils/stats-functions')
 
 //Middleware for checking if user is logged in
 function isLoggedIn(req,res,next) {

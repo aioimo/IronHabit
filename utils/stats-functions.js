@@ -1,6 +1,6 @@
 
-const User       = require("./models/User");
-const Goal       = require("./models/Goal");
+const User       = require("../models/User");
+const Goal       = require("../models/Goal");
 const tools      = require('./time-functions');
 
 

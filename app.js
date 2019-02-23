@@ -8,13 +8,13 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
-const session      = require("express-session");
+const session      = require('express-session');
 const MongoStore   = require('connect-mongo')(session);
-const flash        = require("connect-flash");
-const tools        = require('./time-functions')
-const helper       = require('./helper-functions')
-const Goal         = require("./models/Goal");
-const User         = require("./models/User");
+const flash        = require('connect-flash');
+const tools        = require('./utils/time-functions')
+const helper       = require('./utils/helper-functions')
+const Goal         = require('./models/Goal');
+const User         = require('./models/User');
     
 
 mongoose
