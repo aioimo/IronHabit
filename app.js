@@ -149,9 +149,7 @@ app.use((req,res,next)=> {
     }
     next();
   })
-  .catch(err=> {
-    console.log("ERROR at DAILY Update Middlewear", err)
-  })
+  .catch(err=> {console.log("ERROR at DAILY Update Middlewear", err)})
 })
 
 
