@@ -27,6 +27,7 @@ Now you have to add the following in the .env file:
 
 ```
 PORT=3005
+SESSION_SECRET=your-secret
 ENV=development
 MONGODB_URI=mongodb://localhost/goals-project
 ```
