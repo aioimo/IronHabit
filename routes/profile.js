@@ -4,7 +4,7 @@ const Goal        = require("../models/Goal");
 const User        = require("../models/User");
 const uploadCloud = require('../config/cloudinary.js');
 const stats       = require('../utils/stats-functions')
-const isLoggedIn= require('../middleware/login')
+const isLoggedIn  = require('../middleware/login')
 
 
 
